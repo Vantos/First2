@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script>
+            function klient(nazwisko_k,imie_k,zawod_k){
+                this.nazwisko=nazwisko_k;
+                this.imie=imie_k;
+                this.zawod=zawod_k;
+            }
+            klient.prototype.wypisz=function()
+            {
+                alert(this.nazwisko+' '+this.imie+' '+this.zawod);
+            };
+            var osoba1 = new klient("Kowalski","Jan","kierowca");
+            var osoba2 = new klient("Nowak","Anna","sekretarka");
+            var osoba3 = new klient("Tak","Jan","sprzedawca");
+            var osoba4 = new klient("Gbur","Marian","kierowca");
+            var osoba5 = new klient("Mur","Stanisław","nauczyciel");
+
+            osoba1.wypisz();
+            osoba2.wypisz();
+            osoba3.wypisz();
+            osoba4.wypisz();
+            osoba5.wypisz();
+
+            document.write("dostęp do właściwości"+"<br>");
+            document.write("klient pierwszy" +" "+ osoba1.nazwisko +" "+osoba1.imie +" "+ osoba1.zawod);
+
+            </script>
+    </head>
+    <body>
+        programowanie obiektowe
+    </body>
+</html>
