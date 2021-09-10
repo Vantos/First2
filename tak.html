@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function komputer(OBUDOWA, CPU, GPU, RAM, DISK, CABLE)
+        {
+            this.OBUDOWA=OBUDOWA;
+            this.CPU=CPU;
+            this.GPU=GPU;
+            this.RAM=RAM;
+            this.DISK=DISK;
+            this.CABLE=CABLE;
+        }
+ACER=new komputer("Zalman","i7","RTX 27","HyperX","WD Blue","POWER");
+Lenovo=new komputer("Vostro","Core i5","GTX 43","PanktoN","SSD","LIGHTER");
+Microsoft = new komputer("plas", "ryzen 5", "zen4", "16Gb", "256SSD", "sata");
+
+document.write(Microsoft.OBUDOWA + Microsoft.CPU + Microsoft.GPU + Microsoft.RAM + Microsoft.DISK + Microsoft.CABLE);
+document.write(ACER.OBUDOWA + ACER.CPU + ACER.GPU + ACER.RAM + ACER.DISK + ACER.CABLE);
+        </script>
+    </head>
+</html>
