@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            //function pole_malek(a_mal, b_mal){
+              //  a_dana_mal=parseFloat(a_mal);
+               // b_dana_mal=parseFloat(b_mal);
+               // pole_wynik=a_dana_mal*b_dana_mal;
+               // wynik1.innerHTML="Pole = " + pole_wynik + " ";
+           // }
+
+            function wtf(a,b){
+                var xd = parseFloat(a);
+                var xp = parseFloat(b);
+                var pole = xd * xp;
+                document.write(pole);
+                
+            }
+
+           // function obwod_malek(a_mal,b_mal){
+            //    a_dana_mal=parseFloat(a_mal);
+            //    b_dana_mal=parseFloat(b_mal);
+         //   }
+        </script>
+    </head>
+    <body>
+        <form name="formularz" onsubmit="wtf(this.bok_a.value,this.bok_b.value);">
+            Pole:
+            <input name="bok_a">
+            <input name="bok_b">
+            <input TYPE="submit" Value="oblicz" ><br>  
+            <p name="wynik1"></div>
+        </form>         
+    </body>
+</html>
