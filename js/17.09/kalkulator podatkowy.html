@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <script>
+
+            var przychod;
+            var wybor;
+
+            function dochodowy(){
+                przychod=parseFloat(document.getElementById("przychod").value)
+                var wynik;
+
+                if(wybor == "ryczalt"){
+                    wynik = parseFloat(przychod*0.17);
+                } else if(wybor == "progresywny"){
+                    if(przychod < 8000){
+                    wynik = parseFloat(przychod*0.17+1360);
+                    }else if(przychod >= 8000 < 13000){
+                    wynik = parseFloat(przychod*0.17+2000);
+                    }else if(przychod >= 13000 < 85528){
+                    wynik = parseFloat(przychod*0.17+3000);
+                    }else if(przychod >= 85528){
+                    wynik = parseFloat(przychod*0.32+4000);
+                    }
+                } else if(wybor == "karta"){
+                    wynik = parseFloat(przychod*4);
+                }else if(wybor == "liniowy"){
+                    wynik = parseFloat(przychod*0.19);
+                }
+
+                var output=document.getElementById("wynik");
+                output.value=wynik;
+            }
+
+            function wartosc(){
+                wybor=document.getElementById("kalkulator").value;
+            }
+
+            function init(){
+                var button=document.getElementById("button");
+                button.onclick=dochodowy;
+            }
+            
+            window.onload = init;
+        </script>
+    </head>
+    <body>
+        <select id="kalkulator" onchange="wartosc()">
+            <option value="ryczalt">Ryczałt</option>
+             <option value="progresywny">Podatek progresywny</option>
+            <option value="karta">Karta podatkowa</option>
+            <option value="liniowy">Podatek liniowy</option>
+        </select>
+        <form><br>
+            <input type="text" id="przychod">&nbsp&nbsp
+            <input type="button" id="button" value="Oblicz" onclick="dochodowy()">
+            <input type="text" id="wynik">
+        </form>
+    </body>
+</html>
