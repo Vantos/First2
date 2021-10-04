@@ -6,8 +6,14 @@
             var muszkiet = document.getElementById("muszkieterzy").value;
             var artyleria = document.getElementById("artylerzysci").value;
             var kawaleria = document.getElementById("kawalerzysci").value;
+
+            var wrog_muszkiet = muszkiet * Math.floor(Math.random() * 20);
+            var wrog_artyleria = artyleria * Math.floor(Math.random() * 20);
+            var wrog_kawaleria = kawaleria * Math.floor(Math.random() * 20);
             
-            document.getElementById("lewy").innerHTML="muszkieterzy " + "&nbsp" + muszkiet +  "<br>artylerzysci " +  "&nbsp&nbsp&nbsp&nbsp" + artyleria + "<br>kawalerzysci " +  "&nbsp&nbsp" + kawaleria;
+            document.getElementById("lewy").innerHTML="muszkieterzy " + "&nbsp" + muszkiet +  "<br>artylerzysci " +  "&nbsp&nbsp&nbsp&nbsp" + artyleria + "<br>kawalerzysci " +  "&nbsp&nbsp" + kawaleria + "<br><br><br><br><br> Wrodzy muszkieterowie &nbsp&nbsp" + wrog_muszkiet + "<br>Wroga artyleria &nbsp&nbsp" + wrog_artyleria + "<br>Wroga kawaleria &nbsp&nbsp" + wrog_kawaleria;
+
+            
         }
         </script>
     </head>
@@ -25,7 +31,7 @@
             <button type="button" onclick="wyswietl();">Wyświetl</button>
         </div>
         <div id="footer">
-            
+            <img src="kawaleria.gif" width=automatic height=100%>
         </div>
     </body>
 </html>

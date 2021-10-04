@@ -8,6 +8,7 @@ div#lewy{
     height: 50%;
     width: 50%;
     display: inline-block;
+    font-size: 25px;
 }
 
 div#prawy{
@@ -16,6 +17,7 @@ div#prawy{
     width: 50%;
     display: inline-block;
     float: right;
+    text-align: center;
 }
 
 div#footer{
