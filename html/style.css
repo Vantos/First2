@@ -1,0 +1,30 @@
+div#baner{
+    background-color: blue;
+    height: 25%;
+}
+
+div#lewy{
+    background-color: red;
+    height: 50%;
+    width: 50%;
+    display: inline-block;
+}
+
+div#prawy{
+    background-color: green;
+    height: 50%;
+    width: 50%;
+    display: inline-block;
+    float: right;
+}
+
+div#footer{
+    background-color: #600201;
+    height: 25%;
+}
+
+a{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
