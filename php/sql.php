@@ -14,8 +14,8 @@ $sql = "SELECT id, imie, nazwisko, srednia FROM uczen";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) {
-      echo "id: " . $row["id"]. " - Imię: " . $row["imie"]. " Nazwisko " . $row["nazwisko"]. " Średnia " . $row["srednia"] . "<br>";
+    while($row = $result->fetch_assoc()) { 
+      echo "id: " . $row["id"]. " - Imię: " .  $row["imie"]. " Nazwisko " . $row["nazwisko"]. " Średnia " . $row["srednia"] . "<br>";
     }
   } else {
     echo "0 results";

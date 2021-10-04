@@ -3,9 +3,9 @@
 <body>
 
 <form method="POST">
-    <input type="text" name="MIN" />
-    <input type="text" name="MAX" />
-    <input type="text" name="LICZBA" />
+    Min  <input type="text" name="MIN" /><br>
+    Max  <input type="text" name="MAX" /><br>
+    Liczba losowań  <input type="text" name="LICZBA" /><br>
 <input type="submit" value="LOSUJ"/>
 </form>
 
