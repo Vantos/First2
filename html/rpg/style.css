@@ -1,0 +1,40 @@
+div#tytul{
+    padding: 70px 0;
+    border: 3px solid green;
+    text-align: center;
+    background-color: green;
+    font-size: 500%;
+}
+div#png{
+    background: transparent;
+    width: 25.43%;
+    height: 21%;
+    display: inline-block;
+}
+#png2{
+    background: transparent;
+}
+div#wybor{
+    background-color: red;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    padding: 8.9% 26%;
+}
+div#statystyki{
+    background-color: pink;
+    display: inline-block;
+    float: left;
+    height: 50%;
+    width: 40%;
+}
+div#eq{
+    background-color: lawngreen;
+    display: inline-block;
+    float: right;
+    height: 50%;
+    width: 60%;
+}
+body{
+    background-color: brown;
+}

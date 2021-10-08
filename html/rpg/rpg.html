@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+
+        
+    </head>
+    <body>
+        <div id="tytul">
+            Gra
+        </div>
+        <div id="png">
+            <img id="png2"  width="100%" height="100%">
+        </div>
+        <div id="wybor">
+            <input id="nazwa" placeholder="Nazwa postaci"><br><br>
+            <select id="klasa" onchange="klasa()">
+                <option value="wojownik">Wojownik</option>
+                <option value="lowca">Łowca</option>
+                <option value="mag">Mag</option>
+            </select>
+        </div>
+        <div id="statystyki">
+            
+        </div>
+        <div id="eq">
+            tak
+        </div>
+
+        <script>
+
+        function staty(LVL,STR,DEX,INT){
+        this.LVL=LVL;
+        this.STR=STR;
+        this.DEX=DEX;
+        this.INT=INT
+        }
+
+        wojownik = new staty("1","13","6","6");
+        lowca = new staty("1","5","13","7");
+        mag = new staty("1","3","5","15");
+
+        var wybor;
+
+        function klasa(){
+            wybor=document.getElementById("klasa").value;
+
+            if(wybor == "wojownik"){
+                document.getElementById("png2").src = "wojownik.jpg";
+                document.getElementById("statystyki").innerHTML = "LVL: " + wojownik.LVL + "<br> STR: " + wojownik.STR + "<br> DEX: " + wojownik.DEX + "<br> INT: " + wojownik.INT;
+                
+                }
+            if(wybor == "lowca"){
+                document.getElementById("png2").src = "lowca.jpg";
+                document.getElementById("statystyki").innerHTML = "LVL: " + lowca.LVL + "<br> STR: " + lowca.STR + "<br> DEX: " + lowca.DEX + "<br> INT: " + lowca.INT;
+                }
+            if(wybor == "mag"){
+                document.getElementById("png2").src = "mag.jpg";
+                document.getElementById("statystyki").innerHTML = "LVL: " + mag.LVL + "<br> STR: " + mag.STR + "<br> DEX: " + mag.DEX + "<br> INT: " + mag.INT;
+                }
+            
+        }
+
+        
+
+    </script>
+    </body>
+</html>
