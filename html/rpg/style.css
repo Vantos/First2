@@ -9,7 +9,7 @@ div#tytul{
 }
 div#png{
     background: transparent;
-    width: 25.43%;
+    width: automatic;
     height: 21%;
     display: inline-block;
     color: white;

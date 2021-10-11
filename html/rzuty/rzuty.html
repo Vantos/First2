@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            function rzut(){
+                var scianki = document.getElementById("scianki").value;
+                var rzuty = document.getElementById("rzuty").value;
+                var wynik = scianki * rzuty;
+                document.getElementById("wynik").innerHTML = wynik;
+        }
+        </script>
+    </head>
+    <body>
+    <div id="dane">
+        <input id="scianki" placeholder="Ilość ścianek">
+        <input id="rzuty" placeholder="Ilość rzutów">
+        <button onclick="rzut()">Wylosuj</button>
+    </div><br>
+    <div id="wynik">
+
+    </div>
+    </body>
+</html>
