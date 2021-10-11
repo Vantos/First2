@@ -1,40 +1,50 @@
 div#tytul{
     padding: 70px 0;
-    border: 3px solid green;
+    border: 3px solid black;
     text-align: center;
-    background-color: green;
     font-size: 500%;
+    color: white;
 }
 div#png{
     background: transparent;
     width: 25.43%;
     height: 21%;
     display: inline-block;
+    color: white;
 }
 #png2{
     background: transparent;
+    color: white;
 }
 div#wybor{
-    background-color: red;
     display: inline-block;
     float: right;
     text-align: center;
     padding: 8.9% 26%;
+    color: white;
 }
 div#statystyki{
-    background-color: pink;
     display: inline-block;
     float: left;
     height: 50%;
     width: 40%;
+    color: white;
+}
+div#postac{
+    display: inline-block;
+    float: left;
+    height: 2%;
+    width: 100%;
+    color: white;
 }
 div#eq{
-    background-color: lawngreen;
     display: inline-block;
-    float: right;
+    float: left;
     height: 50%;
     width: 60%;
+    color: white;
 }
 body{
-    background-color: brown;
+    background-color: black;
+    color: white;
 }

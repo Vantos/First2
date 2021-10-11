@@ -12,12 +12,18 @@
             <img id="png2"  width="100%" height="100%">
         </div>
         <div id="wybor">
-            <input id="nazwa" placeholder="Nazwa postaci"><br><br>
+            <form id="myForm"> 
+                <input id="nazwa" placeholder="Nazwa postaci"><br>
+            </form>
+            <button type="button" onclick="zatwierdz()">Zatwierdź</button>
             <select id="klasa" onchange="klasa()">
                 <option value="wojownik">Wojownik</option>
                 <option value="lowca">Łowca</option>
                 <option value="mag">Mag</option>
             </select>
+        </div>
+        <div id="postac">
+            
         </div>
         <div id="statystyki">
             
@@ -27,6 +33,11 @@
         </div>
 
         <script>
+
+        function zatwierdz(){
+            var nick = document.getElementById("nazwa").value;
+            document.getElementById("postac").innerHTML = nick;
+        }
 
         function staty(LVL,STR,DEX,INT){
         this.LVL=LVL;
@@ -46,16 +57,16 @@
 
             if(wybor == "wojownik"){
                 document.getElementById("png2").src = "wojownik.jpg";
-                document.getElementById("statystyki").innerHTML = "LVL: " + wojownik.LVL + "<br> STR: " + wojownik.STR + "<br> DEX: " + wojownik.DEX + "<br> INT: " + wojownik.INT;
+                document.getElementById("statystyki").innerHTML ="<br><br>LVL: " + wojownik.LVL + "<br> STR: " + wojownik.STR + "<br> DEX: " + wojownik.DEX + "<br> INT: " + wojownik.INT;
                 
                 }
             if(wybor == "lowca"){
                 document.getElementById("png2").src = "lowca.jpg";
-                document.getElementById("statystyki").innerHTML = "LVL: " + lowca.LVL + "<br> STR: " + lowca.STR + "<br> DEX: " + lowca.DEX + "<br> INT: " + lowca.INT;
+                document.getElementById("statystyki").innerHTML = "<br><br>LVL: " + lowca.LVL + "<br> STR: " + lowca.STR + "<br> DEX: " + lowca.DEX + "<br> INT: " + lowca.INT;
                 }
             if(wybor == "mag"){
                 document.getElementById("png2").src = "mag.jpg";
-                document.getElementById("statystyki").innerHTML = "LVL: " + mag.LVL + "<br> STR: " + mag.STR + "<br> DEX: " + mag.DEX + "<br> INT: " + mag.INT;
+                document.getElementById("statystyki").innerHTML = "<br><br>LVL: " + mag.LVL + "<br> STR: " + mag.STR + "<br> DEX: " + mag.DEX + "<br> INT: " + mag.INT;
                 }
             
         }
