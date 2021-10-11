@@ -4,6 +4,8 @@ div#tytul{
     text-align: center;
     font-size: 500%;
     color: white;
+    font-family: 'MedievalSharp';
+    
 }
 div#png{
     background: transparent;
@@ -12,7 +14,7 @@ div#png{
     display: inline-block;
     color: white;
 }
-#png2{
+#png2,#png3,#png4,#png5{
     background: transparent;
     color: white;
 }
@@ -29,6 +31,8 @@ div#statystyki{
     height: 50%;
     width: 40%;
     color: white;
+    font-family: 'MedievalSharp';
+    font-size: 30px;
 }
 div#postac{
     display: inline-block;
@@ -36,6 +40,8 @@ div#postac{
     height: 2%;
     width: 100%;
     color: white;
+    font-family: 'MedievalSharp';
+    font-size: 50px;
 }
 div#eq{
     display: inline-block;
@@ -47,4 +53,14 @@ div#eq{
 body{
     background-color: black;
     color: white;
+}
+.button,.select,.input {
+    background-color: black;
+  color: white;
+  border: 2px solid #e7e7e7;
+}
+input[type="button"]{
+
+    background-color : black; 
+  
 }

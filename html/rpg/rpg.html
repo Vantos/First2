@@ -1,21 +1,23 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
         
     </head>
     <body>
         <div id="tytul">
-            Gra
+            RPG
         </div>
         <div id="png">
-            <img id="png2"  width="100%" height="100%">
+            <img id="png2" src="black.png" width="100%" height="100%">
         </div>
         <div id="wybor">
             <form id="myForm"> 
                 <input id="nazwa" placeholder="Nazwa postaci"><br>
             </form>
-            <button type="button" onclick="zatwierdz()">Zatwierdź</button>
+            <button class="button button4" type="button" onclick="zatwierdz()">Zatwierdź</button>
             <select id="klasa" onchange="klasa()">
                 <option value="wojownik">Wojownik</option>
                 <option value="lowca">Łowca</option>
@@ -29,7 +31,9 @@
             
         </div>
         <div id="eq">
-            tak
+            <img id="png3" src="black.png" width="49%" height="49%">
+            <img id="png4" src="black.png" width="49%" height="49%">
+            <img id="png5" src="black.png" width="49%" height="49%">
         </div>
 
         <script>
@@ -51,21 +55,30 @@
         mag = new staty("1","3","5","15");
 
         var wybor;
-
+;
         function klasa(){
             wybor=document.getElementById("klasa").value;
 
             if(wybor == "wojownik"){
                 document.getElementById("png2").src = "wojownik.jpg";
+                document.getElementById("png3").src = "miecz.png";
+                document.getElementById("png4").src = "tarcza.png";
+                document.getElementById("png5").src = "zbroja.png";
                 document.getElementById("statystyki").innerHTML ="<br><br>LVL: " + wojownik.LVL + "<br> STR: " + wojownik.STR + "<br> DEX: " + wojownik.DEX + "<br> INT: " + wojownik.INT;
                 
                 }
             if(wybor == "lowca"){
                 document.getElementById("png2").src = "lowca.jpg";
+                document.getElementById("png3").src = "luk.png";
+                document.getElementById("png4").src = "strzaly.png";
+                document.getElementById("png5").src = "zbroja2.png";
                 document.getElementById("statystyki").innerHTML = "<br><br>LVL: " + lowca.LVL + "<br> STR: " + lowca.STR + "<br> DEX: " + lowca.DEX + "<br> INT: " + lowca.INT;
                 }
             if(wybor == "mag"){
                 document.getElementById("png2").src = "mag.jpg";
+                document.getElementById("png3").src = "kostur.png";
+                document.getElementById("png4").src = "zbroja3.png";
+                document.getElementById("png5").src = "black.png";
                 document.getElementById("statystyki").innerHTML = "<br><br>LVL: " + mag.LVL + "<br> STR: " + mag.STR + "<br> DEX: " + mag.DEX + "<br> INT: " + mag.INT;
                 }
             
