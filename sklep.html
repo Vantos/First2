@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szklep</title>
+    <script>
+        function sklep()
+        {
+            var suma = 0;
+            var produkty = " ";
+            var guma = document.getElementById("guma_cena").value;
+            var guma_check = document.getElementById("guma_cena").checked;
+            if(guma_check==true){
+                suma=suma+2.2;
+                var produkty = produkty + "Guma, ";
+            }
+            var lays_check = document.getElementById("lays_cena").checked;
+            if(lays_check==true){
+                suma=suma+4.7;
+                var produkty = produkty + "Lay's, ";
+            }
+            var monster = document.getElementById("monster_cena").value;
+            var monster_check = document.getElementById("monster_cena").checked;
+            if(monster_check==true){
+                suma=suma+2;
+                var produkty = produkty + "Monster, ";
+            }
+            var woda = document.getElementById("woda_cena").value;
+            var woda_check = document.getElementById("woda_cena").checked;
+            if(woda_check==true){
+                suma=suma+1.2;
+                var produkty = produkty + "Woda, ";
+            }
+            var snickers = document.getElementById("snickers_cena").value;
+            var snickers_check = document.getElementById("snickers_cena").checked;
+            if(snickers_check==true){
+                suma=suma+2.3;
+                var produkty = produkty + "Snickers, ";
+            }
+            if(suma>0){
+                document.getElementById("suma_koszyka").innerHTML = produkty + "<br>" + suma + "zł";
+                
+            }
+            else{
+                suma = "Brak produktów w koszyku";
+                document.getElementById("suma_koszyka").innerHTML = suma;
+            }
+        }
+    </script>
+</head>
+<body style="background-color:#102048; color: white;">
+    <div id="wybor">
+        <img src="szklep.png"><br>
+    Guma - 2,20zł&nbsp;<input type="checkbox" id="guma_cena" value="guma"><br>
+    Lay's - 4,70zł&nbsp;<input type="checkbox" id="lays_cena" value="lays"><br>
+    Monster - 2,00zł&nbsp;<input type="checkbox" id="monster_cena" value="monster"><br>
+    Woda - 1,20zł&nbsp;<input type="checkbox" id="woda_cena" value="woda"><br>
+    Snickers - 2,30zł&nbsp;<input type="checkbox" id="snickers_cena" value="snickers"><br><br>
+    <input type="button" onclick="sklep()" value="Zatwierdź">
+    </div><br><br>
+    <div id="suma_koszyka">
+
+    </div>
+</body>
+</html>
